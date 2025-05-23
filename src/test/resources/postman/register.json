@@ -1,0 +1,38 @@
+{
+  "info": {
+    "name": "Player API",
+    "_postman_id": "unique-id",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Register Player",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/api/players/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "players",
+            "register"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"player@example.com\",\n  \"password\": \"securePassword123\",\n  \"name\": \"John\",\n  \"surname\": \"Doe\"\n}"
+        }
+      }
+    }
+  ]
+}
